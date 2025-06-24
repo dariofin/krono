@@ -2,46 +2,52 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-  scroll-behavior: smooth;
   text-decoration: none;
-  font-family: "Poppins", sans-serif;
 }
 
 a {
   color: inherit;
 }
 
-
 body {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  width: 100%;
   min-height: 100vh;
   /* background-color: #222; */
   text-align: center;
   /* color: #ffe; */
   align-content: center;
   font-family: "Poppins", sans-serif;
+  padding: 0 25px;
 }
-
 
 header {
   text-align: center;
-  padding: 20px 0;
   margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo {
-  padding: 1rem;
+  max-width: 340px;
+  padding: 50px 0;
+  /* padding: 6px; */
 }
 
 .logo img {
-  width: auto;
-  max-width: 360px;
-  margin: 4rem 1rem;
+  width: 100%;
+  /* max-width: 250px; */
+  min-width: 80px;
+  padding: 10px;
 }
-
+.title {
+  font-size: 1.5rem;
+}
 .description {
   margin-bottom: 2px;
 }
@@ -54,30 +60,52 @@ header {
   margin: 2rem 0;
 }
 
-main {}
+main {
+  width: 100%;
+}
 
-/* 
 .videos-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
   max-width: 1400px;
   gap: 2rem;
   justify-items: stretch;
   width: 100%;
   margin: 0 auto;
   padding: 2rem 0;
-} */
-.videos-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  max-width: 1400px;
-  gap: 2rem;
-  justify-items: stretch;
-  justify-content: center;
-  /* Centra los ítems de la última fila */
+  margin-bottom: 30px;
+}
+@media (max-width: 450px) {
+  .videos-grid {
+    grid-template-columns: 1fr;
+  }
+  body {
+    padding: 0 10px;
+  }
+}
+
+.video-main {
   width: 100%;
-  margin: 0 auto;
-  padding: 2rem 0;
+  max-width: 1400px; /* O el mismo max-width que uses en .videos-grid */
+  margin: 0 auto 2rem auto;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+}
+
+@media (max-width: 450px) {
+  .videos-main {
+    padding: 5px;
+  }
+}
+.video-main iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  border-radius: 8px;
+  margin-bottom: 1rem;
 }
 
 .video-container {
