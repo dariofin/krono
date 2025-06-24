@@ -1,0 +1,104 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: inherit;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: 100vh;
+  /* background-color: #222; */
+  text-align: center;
+  /* color: #ffe; */
+  align-content: center;
+  font-family: "Poppins", sans-serif;
+}
+
+
+header {
+  text-align: center;
+  padding: 20px 0;
+  margin-bottom: 100px;
+}
+
+.logo {
+  padding: 1rem;
+}
+
+.logo img {
+  width: auto;
+  max-width: 360px;
+  margin: 4rem 1rem;
+}
+
+.description {
+  margin-bottom: 2px;
+}
+
+.ltv-logo {
+  max-width: 150px;
+}
+
+.LTV-intro {
+  margin: 2rem 0;
+}
+
+main {}
+
+/* 
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  max-width: 1400px;
+  gap: 2rem;
+  justify-items: stretch;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+} */
+.videos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  max-width: 1400px;
+  gap: 2rem;
+  justify-items: stretch;
+  justify-content: center;
+  /* Centra los ítems de la última fila */
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.video-container {
+  border: solid 1px #e2e2e2;
+  border-radius: 10px;
+  padding: 1rem;
+  color: #222;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
+}
+
+.video-container iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  /* Hace el video responsivo */
+  max-width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.titulo-video {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
