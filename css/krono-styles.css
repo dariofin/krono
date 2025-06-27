@@ -25,7 +25,6 @@ body {
 
 header {
   text-align: center;
-  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-content: center;
@@ -56,7 +55,14 @@ header {
   font-size: 1.5rem;
 }
 .description {
-  margin-bottom: 2px;
+  margin-bottom: 2rem;
+}
+.description a {
+  font-weight: bolder;
+}
+
+.name {
+  margin-bottom: 2rem;
 }
 
 .ltv-logo {
@@ -64,7 +70,7 @@ header {
 }
 
 .LTV-intro {
-  margin: 2rem 0;
+  margin: 1rem auto 2rem auto;
 }
 
 .videos-grid {
@@ -75,46 +81,22 @@ header {
   justify-items: stretch;
   width: 100%;
   margin: 0 auto;
-  padding: 2rem 0;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
 }
 @media (max-width: 450px) {
   .videos-grid {
-    grid-template-columns: 1fr;
+    display: block;
   }
   body {
     padding: 0 10px;
   }
 }
 
-.video-main {
-  width: 100%;
-  max-width: 1400px; /* O el mismo max-width que uses en .videos-grid */
-  margin: 0 auto 2rem auto;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  border-radius: 12px;
-  padding: 1rem;
-}
-
-@media (max-width: 450px) {
-  .videos-main {
-    padding: 5px;
-  }
-}
-.video-main iframe {
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  height: auto;
-  display: block;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-}
-
 .video-container {
   border: solid 1px #e2e2e2;
   border-radius: 10px;
-  padding: 1rem;
+  /* padding: 1rem; */
+  margin-bottom: 1rem;
   color: #222;
   box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.06);
 }
@@ -127,9 +109,41 @@ header {
   max-width: 100%;
   display: block;
   margin-bottom: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+.video-main {
+  width: 100%;
+  max-width: 1400px; /* O el mismo max-width que uses en .videos-grid */
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background: #fff;
+
+  padding-bottom: 1rem;
+}
+
+.video-main iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  height: auto;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 10px 10px 0 0;
 }
 
 .titulo-video {
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   font-weight: 600;
+}
+
+.descripcion-video {
+  padding-bottom: 1rem;
+}
+@media (max-width: 450px) {
+  .titulo-video {
+    font-size: 0.9rem;
+  }
+
+  .descripcion-video {
+    font-size: 0.8rem;
+  }
 }
