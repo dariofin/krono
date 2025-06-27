@@ -1,0 +1,16 @@
+{
+  "name": "Krono Finelli",
+  "short_name": "Krono",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#222222",
+  "description": "Sitio oficial de Lautaro 'Krono' Finelli",
+  "icons": [
+    {
+      "src": "img/ltv-logo-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
