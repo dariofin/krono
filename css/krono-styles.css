@@ -114,7 +114,7 @@ header {
 .video-main {
   width: 100%;
   max-width: 1400px; /* O el mismo max-width que uses en .videos-grid */
-  margin-bottom: 2rem;
+  margin: 0 auto 2rem auto;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
   background: #fff;
 
@@ -146,4 +146,67 @@ header {
   .descripcion-video {
     font-size: 0.8rem;
   }
+}
+
+/* Animación de entrada con rebote para el logo */
+@keyframes logoBounceIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-120vh) scaleY(1.2) scaleX(0.8);
+  }
+  12% {
+    opacity: 1;
+    transform: translateY(-80vh) scaleY(1.1) scaleX(0.9);
+  }
+  40% {
+    transform: translateY(0) scaleY(0.7) scaleX(1.2); /* Primer impacto, aplastado */
+  }
+  55% {
+    transform: translateY(-40px) scaleY(1.15) scaleX(0.85); /* Rebote hacia arriba, estirado */
+  }
+  70% {
+    transform: translateY(0) scaleY(0.8) scaleX(1.15); /* Segundo impacto, menos aplastado */
+  }
+  80% {
+    transform: translateY(-20px) scaleY(1.08) scaleX(0.92); /* Rebote pequeño */
+  }
+  88% {
+    transform: translateY(0) scaleY(0.95) scaleX(1.05); /* Último rebote, casi estable */
+  }
+  93% {
+    transform: translateY(-8px) scaleY(1.03) scaleX(0.97);
+  }
+  97% {
+    transform: translateY(0) scaleY(1) scaleX(1);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1) scaleX(1);
+  }
+}
+.logo.animated {
+  animation: logoBounceIn 1.2s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  will-change: transform;
+}
+
+@keyframes logoBounceOut {
+  0% {
+    opacity: 1;
+    transform: translateY(0) scaleY(1) scaleX(1);
+  }
+  20% {
+    transform: translateY(-8px) scaleY(1.03) scaleX(0.97);
+  }
+  40% {
+    transform: translateY(0) scaleY(0.95) scaleX(1.05);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-120vh) scaleY(1.2) scaleX(0.8);
+  }
+}
+
+.logo.animated-out {
+  animation: logoBounceOut 1s cubic-bezier(0.68, -0.55, 0.27, 1.55);
+  will-change: transform;
 }

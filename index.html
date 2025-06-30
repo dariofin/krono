@@ -30,13 +30,17 @@
   <meta name="theme-color" content="#222222">
 
   <!-- CSS -->
-  <link href="css/krono-styles.css" rel="stylesheet">
+  <link href="css/krono-styles.css?v=2025062623" rel="stylesheet">
 
   <!-- JS -->
-
+  <script src="js/app.js" defer></script>
 
 </head>
 
+<button id="installAppBtn"
+  style="display:none;position:fixed;bottom:24px;left:50%;transform:translateX(-50%);z-index:9999;padding:1em 2em;font-size:1.1em;border-radius:8px;background:#222;color:#fff;border:none;box-shadow:0 2px 8px #0003;cursor:pointer;">
+  Instalar esta app
+</button>
 
 <body>
 
@@ -235,6 +239,27 @@
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('js/webapp.js');
     }
+  </script>
+
+
+  <script>
+    let deferredPrompt;
+    const installBtn = document.getElementById('installAppBtn');
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+      e.preventDefault();
+      deferredPrompt = e;
+      installBtn.style.display = 'block';
+    });
+
+    installBtn.addEventListener('click', async () => {
+      installBtn.style.display = 'none';
+      if (deferredPrompt) {
+        deferredPrompt.prompt();
+        const { outcome } = await deferredPrompt.userChoice;
+        deferredPrompt = null;
+      }
+    });
   </script>
 </body>
 
