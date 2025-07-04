@@ -21,6 +21,7 @@ body {
   align-content: center;
   font-family: "Poppins", sans-serif;
   padding: 0 20px;
+  background-color: #f0f0f0;
 }
 
 header {
@@ -126,7 +127,7 @@ header {
   aspect-ratio: 16 / 9;
   height: auto;
   display: block;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   border-radius: 10px 10px 0 0;
 }
 
