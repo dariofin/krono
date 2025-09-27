@@ -30,10 +30,11 @@
   <meta name="theme-color" content="#222222">
 
   <!-- CSS -->
-  <link href="css/krono-styles.css?v=2025062623" rel="stylesheet">
+  <link href="css/krono-styles.css?v=20250927r5" rel="stylesheet">
+  <link rel="stylesheet" href="dossier-krono.css?v=20250927r5">
 
   <!-- JS -->
-  <script src="js/app.js" defer></script>
+  <script src="js/app.js?v=20250927r5" defer></script>
 
 
   <!-- Google tag (gtag.js) -->
@@ -68,14 +69,21 @@
 
     <article class="desconectar">
       <div>
-        <h2 class="font-light">"DESCONECTAR"</h2>
+        <h1 class="font-light">"DESCONECTAR"</h1>
         <h4>ft. Chelo SS, Flora</h4>
       </div>
 
-      <img class="desconectar__img" src="/img/DESCONECTAR-portada-vinilo.png" alt="DESCONECTAR portada" srcset="">
+      <div style="position: relative;">
+        <img class="desconectar__img" id="portada-vinilo" src="/img/DESCONECTAR-portada-vinilo.png"
+          alt="DESCONECTAR portada">
+        <div id="controlIcon" class="play-icon"></div>
+      </div>
+      <audio id="audioPlayer" src="/snd/Desconectar-parcialweb.mp3"></audio>
+      <!-- ----- -->
+
+
       <img class="spotify-waves" src="/img/sptfy-waves.webp" alt="Spotify icon with waves">
       <p>próximamente disponible en todas las plataformas</p>
-
 
     </article>
 
@@ -98,12 +106,13 @@
   <!-- DESCONECTAR 🤘🏽 - Krono Chelo Flora
  -->
   <div class="video-container video-main">
-    <iframe src="https://www.youtube.com/embed/P7NiVHwlFQ4?si=G4y94msHsp6SlmIS∫" title="YouTube video player"
+    <iframe src="https://www.youtube.com/embed/P7NiVHwlFQ4?si=G4y94msHsp6SlmIS" title="YouTube video player"
       frameborder="0"
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       allowfullscreen></iframe>
     <p class="titulo-video">
-      DESCONECTAR </p>
+      DESCONECTAR
+    </p>
     <p class="descripcion-video">
       Krono Finelli ft. Chelo SS, Flora
       <br>
@@ -186,7 +195,9 @@
       </p>
     </div>
 
-    <div class="video-container">
+    <!-- Sobre un vidrio mojado by 🎤 Krono Finelli en vivo🤘🏽 -->
+
+    <!-- <div class="video-container">
       <iframe src="https://www.youtube-nocookie.com/embed/ESHv5ssMnnY" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
@@ -195,7 +206,7 @@
         Teatro de Verano de Colón <br>
         23/02/2025
       </p>
-    </div>
+    </div> -->
 
 
     <!-- Tamo regalá by 🎤 Krono 2024 en vivo🤘🏽 -->
@@ -225,7 +236,7 @@
     </div>
 
     <!-- Carnavalintro by Krono 2023 en vivo🤘🏽 -->
-    <div class="video-container">
+    <!-- <div class="video-container">
       <iframe src="https://www.youtube-nocookie.com/embed/RLVJPGnrNQw" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
@@ -234,7 +245,7 @@
         Teatro de Verano de Colón <br>
         24/02/2023
       </p>
-    </div>
+    </div> -->
 
 
 
@@ -263,7 +274,7 @@
       </p>
     </div>
 
-    <div class="video-container">
+    <!-- <div class="video-container">
       <iframe src="https://www.youtube-nocookie.com/embed/FWpgYFOKgb8" title="YouTube video player" frameborder="0"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen></iframe>
@@ -272,7 +283,7 @@
         Teatro de Verano Ramón Collazo <br>
         05/01/2022
       </p>
-    </div>
+    </div> -->
 
 
 
@@ -282,6 +293,9 @@
   <br>
 
   <section class="description">
+    <a href="/dossier">
+      <img src="/img/krono-perfil-la-voz-kids.png" alt="Lautaro 'Krono' perfil La Voz Kids 2025">
+    </a>
     <h1>Krono Finelli</h1>
     <p>Músico 🇺🇾</p>
 
@@ -293,6 +307,8 @@
         Sinapsis</a></p>
     <p> Participante de<a href="https://www.instagram.com/lavoz_uy" target="_blank">"La Voz
         Kids 2025" Uruguay </a> </p>
+    <p> Integrante del "Team Rada" (Ruben Rada)</p>
+    <p>🤘🏽</p>
   </section>
 
 

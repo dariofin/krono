@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="es" style="scroll-behavior: smooth;">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lautaro Finelli - Wikipedia de Krono Finelli</title>
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            line-height: 1.6;
+            color: #202122;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            background-color: #fff;
+            border: 1px solid #a2a9b1;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            /* Sombra suave */
+            padding: 20px 30px;
+            border-radius: 5px;
+            /* Bordes redondeados */
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #0a0a0a;
+            margin-top: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 0.3em;
+            margin-bottom: 1em;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            border-bottom: 1px solid #a2a9b1;
+            padding-bottom: 0.3em;
+        }
+
+        h3 {
+            font-size: 1.4em;
+        }
+
+        a {
+            color: #3366cc;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        ol {
+            margin-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1em 0;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            /* Bordes redondeados en tabla */
+            overflow: hidden;
+            /* Asegura que los bordes redondeados se apliquen al contenido */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            /* Sombra suave para tabla */
+        }
+
+        th,
+        td {
+            border: 1px solid #a2a9b1;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #eaecf0;
+        }
+
+        /* Tabla de Contenido (TOC) */
+        .toc {
+            border: 1px solid #a2a9b1;
+            background-color: #f8f9fa;
+            padding: 10px;
+            margin: 1em 0;
+            width: fit-content;
+            border-radius: 5px;
+            /* Bordes redondeados en TOC */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            /* Sombra suave para TOC */
+        }
+
+        .toc h2 {
+            font-size: 1.2em;
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-top: 0;
+        }
+
+        .toc ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .toc ul ul {
+            margin-left: 1.5em;
+        }
+
+        /* Infobox (Caja de información lateral) */
+        .infobox {
+            float: right;
+            border: 1px solid #a2a9b1;
+            background-color: #f9f9f9;
+            padding: 10px;
+            margin-left: 20px;
+            margin-bottom: 1em;
+            width: 280px;
+            font-size: 0.9em;
+            clear: right;
+            border-radius: 5px;
+            /* Bordes redondeados en infobox */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+            /* Sombra suave para infobox */
+        }
+
+        .infobox img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin-bottom: 5px;
+            border-radius: 3px;
+            /* Bordes ligeramente redondeados para la imagen */
+        }
+
+        .infobox caption {
+            font-weight: bold;
+            padding-bottom: 5px;
+        }
+
+        .infobox th,
+        .infobox td {
+            border: none;
+            padding: 4px 8px;
+        }
+
+        /* Referencias */
+        .references {
+            font-size: 0.9em;
+        }
+
+        .references ol {
+            list-style-type: decimal;
+            padding-left: 25px;
+        }
+
+        .ref-cite {
+            color: #3366cc;
+            vertical-align: super;
+            font-size: 0.7em;
+        }
+
+        /* Placeholders de Imagen */
+        .image-placeholder {
+            text-align: center;
+            margin: 1em 0;
+        }
+
+        .image-placeholder img {
+            max-width: 80%;
+            height: auto;
+            border: 1px solid #ccc;
+            padding: 5px;
+            background-color: #fff;
+            border-radius: 3px;
+            /* Bordes ligeramente redondeados para imágenes del cuerpo */
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+            /* Sombra suave para imagen del cuerpo */
+        }
+
+        .image-caption {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 5px;
+        }
+
+        /* ****************************************************** */
+        /* Estilos Responsive para pantallas pequeñas (ej. móviles) */
+        /* ****************************************************** */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .container {
+                padding: 15px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            h3 {
+                font-size: 1.2em;
+            }
+
+            .infobox {
+                float: none;
+                width: 100%;
+                margin-left: 0;
+                margin-right: 0;
+                box-sizing: border-box;
+            }
+
+            .toc {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                border: 1px solid #ccc;
+                margin-bottom: 10px;
+                border-radius: 5px;
+            }
+
+            td {
+                border: none;
+                border-bottom: 1px solid #eee;
+                position: relative;
+                padding-left: 50%;
+                text-align: right;
+            }
+
+            td:before {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+                text-align: left;
+                font-weight: bold;
+            }
+
+            td:nth-of-type(1):before {
+                content: "Fecha/Año:";
+            }
+
+            td:nth-of-type(2):before {
+                content: "Evento/Concierto:";
+            }
+
+            td:nth-of-type(3):before {
+                content: "Interpretaciones:";
+            }
+
+            td:nth-of-type(4):before {
+                content: "Enlaces:";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="infobox">
+
+            <a href="/">
+                <img src="/img/Krono-pared-guitarra-480.jpg"
+                    alt="Lautaro 'Krono' Finelli posando con una guitarra eléctrica frente a una pared texturizada, estilo artístico monocromático.">
+            </a>
+            <div class="image-caption" style="text-align: center;">Krono Finelli en una sesión fotográfica.</div>
+            <table>
+                <tr>
+                    <th scope="row">Nombre de nacimiento</th>
+                    <td>Lautaro Finelli</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nombre artístico</th>
+                    <td>Krono Finelli</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nacimiento</th>
+                    <td>19 de abril de 2013</td>
+                </tr>
+                <tr>
+                    <th scope="row">Origen</th>
+                    <td>Uruguay</td>
+                </tr>
+                <tr>
+                    <th scope="row">Nacionalidad</th>
+                    <td>Uruguayo</td>
+                </tr>
+                <tr>
+                    <th scope="row">Ocupación</th>
+                    <td>Músico, Cantante, Guitarrista</td>
+                </tr>
+                <tr>
+                    <th scope="row">Género</th>
+                    <td>Rock, Rock Alternativo</td>
+                </tr>
+                <tr>
+                    <th scope="row">Instrumentos</th>
+                    <td>Voz, Guitarra</td>
+                </tr>
+                <tr>
+                    <th scope="row">Artistas relacionados</th>
+                    <td>Chelo SS, Flora Finelli, Sinapsis, La Zafada</td>
+                </tr>
+            </table>
+        </div>
+
+        <h1>Lautaro Finelli</h1>
+        <p><b>Lautaro Finelli</b> (Uruguay, 19 de abril de 2013) conocido artísticamente como <b>Krono Finelli</b>, es
+            un músico, cantante y guitarrista uruguayo. Se ha destacado por su participación en la escena rock local, en
+            murgas y recientemente por su aparición en el programa televisivo <i>La Voz Kids Uruguay</i>.<sup
+                id="cite_ref-lavozkids" class="ref-cite">[1]</sup><sup id="cite_ref-canal10" class="ref-cite">[2]</sup>
+        </p>
+
+        <div class="toc" id="toc">
+            <h2>Índice</h2>
+            <ul>
+                <li><a href="#primeros-años-e-inicios-musicales">1 Primeros años e inicios musicales</a></li>
+                <li><a href="#trayectoria-artística">2 Trayectoria artística</a>
+                    <ul>
+                        <li><a href="#grupos-y-colaboraciones">2.1 Grupos y colaboraciones</a></li>
+                        <li><a href="#sencillos-y-lanzamientos">2.2 Sencillos y lanzamientos</a></li>
+                    </ul>
+                </li>
+                <li><a href="#reconocimiento-mediático">3 Reconocimiento mediático</a></li>
+                <li><a href="#presentaciones-en-vivo-y-conciertos">4 Presentaciones en vivo y conciertos</a></li>
+                <li><a href="#referencias">5 Referencias</a></li>
+            </ul>
+        </div>
+
+        <h2 id="primeros-años-e-inicios-musicales">Primeros años e inicios musicales</h2>
+        <p>Lautaro Finelli mostró una temprana inclinación por la música, realizando sus primeras presentaciones
+            públicas siendo aún un niño.</p>
+        <p>Su primera actuación documentada fue cantando la canción "Glú Glú" de Cuatro Pesos de Propina en la escuela
+            de su tía Leticia. Poco después, ya se presentaba en escenarios de mayor envergadura como el Teatro de
+            Verano de Colón, participando en eventos barriales como el festejo del Día del Niño. Un ejemplo de esto fue
+            su interpretación de "De Música Ligera" en el festejo del Día del Niño en Monte de la Francesa en 2022.</p>
+        <p>El apodo "Krono", que adoptaría como su nombre artístico, surgió en una conversación con su compañero de la
+            murga La Zafada, Lucho, mientras se dirigían a un ensayo y discutían posibles nombres artísticos para
+            Lautaro.</p>
+        <p>Sus influencias musicales radican en el rock nacional e internacional, declarándose admirador de bandas como
+            Trotsky Vengarán, Cuatro Pesos de Propina y Los Redondos.</p>
+
+        <h2 id="trayectoria-artística">Trayectoria artística</h2>
+
+        <h3 id="grupos-y-colaboraciones">Grupos y colaboraciones</h3>
+        <ul>
+            <li><b>Murga La Zafada:</b> Desde 2021, Lautaro forma parte de esta murga, participando activamente en el
+                Carnaval de las Promesas.</li>
+            <li><b>Sinapsis (Banda de Rock):</b> En 2024, se unió a la banda de rock Sinapsis como cantante y
+                guitarrista, un proyecto que comparte con amigos de edades similares (entre 12 y 14 años).</li>
+        </ul>
+
+        <h3 id="sencillos-y-lanzamientos">Sencillos y lanzamientos</h3>
+        <p>Krono Finelli ha comenzado a grabar material de estudio, destacando las siguientes producciones:</p>
+        <ul>
+            <li><b>"El Amor te Espera":</b> Su primer sencillo de estudio. Nació de una invitación a colaborar con el
+                artista local Chelo SS.</li>
+            <div class="image-placeholder">
+                <a href="https://www.youtube.com/watch?v=OGxc-EtlxQo" target="_blank">
+                    <img src="/img/EL-AMOR-TE-ESPERA-portada(300).jpg"
+                        alt="Portada del sencillo 'El Amor te Espera' de Chelo SS y Krono Finelli, con un corazón azul en un marco de tira de película."></a>
+                <div class="image-caption">Portada del sencillo "El Amor te Espera" (Chelo SS ft. Krono).</div>
+            </div>
+            <li><b>"Desconectar":</b> Lanzado el 27 de setiembre de 2025, este nuevo sencillo de rock es un tema
+                propio del estilo rock de Krono Finelli, que contó con la colaboración de Chelo SS y la participación de
+                su hermana
+                <a href="https://florenciafinelli.com/" target="_blank" rel="noopener noreferrer">Flora
+                    Finelli</a>.
+            </li>
+            <div class="image-placeholder">
+                <a href="https://www.youtube.com/watch?v=P7NiVHwlFQ4" target="_blank">
+                    <img src="/img/DESCONECTAR-portada(300).jpg"
+                        alt="Portada del sencillo 'Desconectar' de Krono Finelli, con Chelo SS y Flora Finelli."
+                        aria-label="Portada de Desconectar"></a>
+                <div class="image-caption">Portada del nuevo sencillo "Desconectar" (Krono Finelli ft. Chelo SS &
+                    <a href="https://www.youtube.com/@florfinelligallo" target="_blank" rel="noopener noreferrer">Flora
+                        Finelli</a>).
+                </div>
+            </div>
+            <li><b>Colaboraciones con Chelo SS y <a href="https://www.instagram.com/florfinelligallo/" target="_blank"
+                        rel="noopener noreferrer">Flora Finelli</a> (otros temas):</b> Ha continuado trabajando con
+                Chelo SS
+                y ha grabado otra canción de rock adicional con <a href="https://www.instagram.com/florfinelligallo/"
+                    target="_blank" rel="noopener noreferrer">Flora Finelli</a>.</li>
+        </ul>
+
+        <h2 id="reconocimiento-mediático">Reconocimiento mediático</h2>
+        <p>La carrera de Krono Finelli ha cobrado mayor visibilidad gracias a su participación en medios de
+            comunicación:</p>
+        <ul>
+            <li><b><i>La Voz Kids Uruguay 2025</i>:</b> Este fue un punto de inflexión en su reconocimiento público.<sup
+                    id="cite_ref-lavozkids" class="ref-cite">[1]</sup>
+                <ul>
+                    <li>En las audiciones a ciegas, interpretó "**Noche de Rock**" de Trotsky Vengarán, logrando que el
+                        reconocido músico Rubén Rada lo eligiera para su equipo.<sup id="cite_ref-lavozkids"
+                            class="ref-cite">[1]</sup></li>
+                    <li>Posteriormente, en la etapa de batallas, destacó con una memorable interpretación de "**Candombe
+                        de la aduana**" de Níquel (composición de Jorge Nasser), demostrando su versatilidad y presencia
+                        escénica.<sup id="cite_ref-lavozkids_batalla" class="ref-cite">[3]</sup></li>
+                </ul>
+            </li>
+            <li><b>Entrevistas:</b> Tras su éxito en <i>La Voz Kids</i>, fue invitado a una entrevista en vivo en el
+                programa "La Mañana en Casa" de Canal 10.<sup id="cite_ref-canal10" class="ref-cite">[2]</sup></li>
+            <li><b>Presencia en YouTube:</b> Mantiene un canal oficial de YouTube, "LTV by Krono Finelli", donde
+                comparte sus producciones, videos musicales y registros de sus conciertos.</li>
+        </ul>
+
+        <h2 id="presentaciones-en-vivo-y-conciertos">Presentaciones en vivo y conciertos</h2>
+        <p>Krono Finelli ha tenido la oportunidad de presentarse en importantes escenarios uruguayos. A continuación,
+            algunas de sus actuaciones más destacadas:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Fecha/Año</th>
+                    <th>Evento/Concierto</th>
+                    <th>Interpretaciones Notables</th>
+                    <th>Enlaces</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>05/01/2022</td>
+                    <td>Teatro de Verano Ramón Collazo</td>
+                    <td>“Rap de Ida y Vuelta”</td>
+                    <td><a href="https://youtu.be/FWpgYFOKgb8?si=keMxnFc5cIwvOR24" target="_blank">Ver Actuación</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>14/08/2022</td>
+                    <td>Teatro de Verano de Colón</td>
+                    <td>“Corazón” (Cuatro Pesos de Propina)</td>
+                    <td><a href="https://youtu.be/mtcVv7q2aiY" target="_blank">Ver Actuación</a></td>
+                </tr>
+                <tr>
+                    <td>24/02/2023</td>
+                    <td>Teatro de Verano de Colón</td>
+                    <td>“Colores (Ska-P)”, “Carnavalintro”, “Dedos (Ruben Rada)”</td>
+                    <td><a href="https://www.youtube.com/watch?v=ErHlt1Ywe5w&list=PLN3ZsrxsUZ9OXkMHZT848mjRuinyCnPDm"
+                            target="_blank">Ver Actuación</a></td>
+                </tr>
+                <tr>
+                    <td>23/02/2025</td>
+                    <td>Teatro de Verano de Colón</td>
+                    <td>“Hollywood by Krono Finelli”, “Sobre un vidrio mojado”</td>
+                    <td><a href="https://www.youtube.com/watch?v=ESHv5ssMnnY" target="_blank">Ver Actuación</a></td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>La Voz Kids Uruguay (Audiciones a Ciegas)</td>
+                    <td>“Noche de Rock” (Trotsky Vengarán)<sup id="cite_ref-lavozkids" class="ref-cite">[1]</sup></td>
+                    <td><a href="https://www.youtube.com/watch?v=T3mkdpHEoHs" target="_blank">Ver Audición</a></td>
+                </tr>
+                <tr>
+                    <td>2025</td>
+                    <td>La Voz Kids Uruguay (Batallas)</td>
+                    <td>“Candombe de la aduana” (Níquel / Jorge Nasser)<sup id="cite_ref-lavozkids_batalla"
+                            class="ref-cite">[3]</sup></td>
+                    <td><a href="
+                        https://www.youtube.com/watch?v=MncAOUU4fJs
+                        " target="_blank">Ver Batalla</a></td>
+                </tr>
+                <tr>
+                    <td>Día de la Niñez 2025</td>
+                    <td>Parque de los Fogones</td>
+                    <td>[Canciones Interpretadas - Por favor, especifica si las tienes]</td>
+                    <td><a href="https://www.youtube.com/watch?v=5hKJhcJt_8c" target="_blank"> Ver Actuación</a></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2 id="referencias">Referencias</h2>
+        <div class="references">
+            <ol>
+                <li id="cite_note-lavozkids">
+                    <a href="https://www.colon.com.uy/arte-y-cultura/6578-lautaro-krono-finelli-con-rada-en-la-voz-kids"
+                        target="_blank">
+                        Audición a ciegas de Krono Finelli en La Voz Kids Uruguay.</a>
+                </li>
+
+
+                <li id="cite_note-canal10"><a href="https://www.canal10.com.uy/lautaro-participante-la-voz-kids-n980616"
+                        target="_blank">"Lautaro, participante de La Voz Kids" - Entrevista en Canal 10.</a></li>
+                <li id="cite_note-lavozkids_batalla">Batalla de Krono Finelli en La Voz Kids Uruguay.</li>
+            </ol>
+        </div>
+    </div>
+</body>
+
+</html>

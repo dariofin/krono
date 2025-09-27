@@ -26,3 +26,36 @@ window.addEventListener("DOMContentLoaded", function () {
 
   setTimeout(animateLogo, 100);
 });
+
+// reproductor vinilo
+document.addEventListener("DOMContentLoaded", function () {
+  const portadaVinilo = document.getElementById("portada-vinilo");
+  const audioPlayer = document.getElementById("audioPlayer");
+  const controlIcon = document.getElementById("controlIcon");
+
+  // Mostrar el ícono de play al cargar la página
+  controlIcon.classList.add("play-icon");
+
+  // Función para reproducir el audio
+  function playAudio() {
+    audioPlayer.play();
+    controlIcon.classList.remove("play-icon");
+    controlIcon.classList.add("pause-icon");
+  }
+
+  // Función para pausar el audio
+  function pauseAudio() {
+    audioPlayer.pause();
+    controlIcon.classList.remove("pause-icon");
+    controlIcon.classList.add("play-icon");
+  }
+
+  // Evento al hacer clic en el ícono
+  controlIcon.addEventListener("click", function () {
+    if (audioPlayer.paused) {
+      playAudio();
+    } else {
+      pauseAudio();
+    }
+  });
+});
