@@ -1,0 +1,6 @@
+     <td>24/02/2023</td>
+                    <td>Teatro de Verano de Colón</td>
+                    <td>“Colores (Ska-P)”, “Carnavalintro”, “Dedos (Ruben Rada)”</td>
+                    <td><a href="https://www.youtube.com/watch?v=ErHlt1Ywe5w&list=PLN3ZsrxsUZ9OXkMHZT848mjRuinyCnPDm"
+                            target="_blank">Ver Actuación</a></td>
+                </tr>

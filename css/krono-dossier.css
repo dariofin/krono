@@ -1,0 +1,316 @@
+/* Estilos generales */
+body {
+  font-family: "Segoe UI", Arial, sans-serif;
+  line-height: 1.6;
+  color: #202122;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  background-color: #fff;
+  border: 1px solid #a2a9b1;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  /* Sombra suave */
+  padding: 20px 30px;
+  border-radius: 5px;
+  /* Bordes redondeados */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #0a0a0a;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+h1 {
+  font-size: 2.2em;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+}
+
+h2 {
+  font-size: 1.8em;
+  border-bottom: 1px solid #a2a9b1;
+  padding-bottom: 0.3em;
+}
+
+h3 {
+  font-size: 1.4em;
+}
+
+a {
+  color: #3366cc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin-left: 20px;
+}
+
+ol {
+  margin-left: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  /* Bordes redondeados en tabla */
+  overflow: hidden;
+  /* Asegura que los bordes redondeados se apliquen al contenido */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  /* Sombra suave para tabla */
+}
+
+th,
+td {
+  border: 1px solid #a2a9b1;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #eaecf0;
+}
+
+/* Tabla de Contenido (TOC) */
+.toc {
+  border: 1px solid #a2a9b1;
+  background-color: #f8f9fa;
+  padding: 10px;
+  margin: 1em 0;
+  width: fit-content;
+  border-radius: 5px;
+  /* Bordes redondeados en TOC */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  /* Sombra suave para TOC */
+}
+
+.toc h2 {
+  font-size: 1.2em;
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-top: 0;
+}
+
+.toc ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toc ul ul {
+  margin-left: 1.5em;
+}
+
+/* Infobox (Caja de información lateral) */
+.infobox {
+  float: right;
+  border: 1px solid #a2a9b1;
+  background-color: #f9f9f9;
+  padding: 10px;
+  margin-left: 20px;
+  margin-bottom: 1em;
+  width: 280px;
+  font-size: 0.9em;
+  clear: right;
+  border-radius: 5px;
+  /* Bordes redondeados en infobox */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  /* Sombra suave para infobox */
+}
+
+.infobox img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 5px;
+  border-radius: 3px;
+  /* Bordes ligeramente redondeados para la imagen */
+}
+
+.infobox caption {
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.infobox th,
+.infobox td {
+  border: none;
+  padding: 4px 8px;
+}
+
+/* Referencias */
+.references {
+  font-size: 0.9em;
+}
+
+.references ol {
+  list-style-type: decimal;
+  padding-left: 25px;
+}
+
+.ref-cite {
+  color: #3366cc;
+  vertical-align: super;
+  font-size: 0.7em;
+}
+
+/* Placeholders de Imagen */
+.image-placeholder {
+  text-align: center;
+  margin: 1em 0;
+}
+
+.image-placeholder img {
+  max-width: 80%;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 3px;
+  /* Bordes ligeramente redondeados para imágenes del cuerpo */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  /* Sombra suave para imagen del cuerpo */
+}
+
+.image-caption {
+  font-size: 0.9em;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* ****************************************************** */
+/* Estilos Responsive para pantallas pequeñas (ej. móviles) */
+/* ****************************************************** */
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.2em;
+  }
+
+  .infobox {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    box-sizing: border-box;
+  }
+
+  .toc {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  td {
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    text-align: right;
+  }
+
+  td:before {
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold;
+  }
+
+  td:nth-of-type(1):before {
+    content: " ";
+  }
+
+  td:nth-of-type(2):before {
+    content: "Evento/Concierto:";
+  }
+
+  td:nth-of-type(3):before {
+    content: "Interpretaciones:";
+  }
+
+  td:nth-of-type(4):before {
+    content: "Enlaces:";
+  }
+}
+
+@media (max-width: 600px) {
+  .presentaciones thead {
+    display: none;
+  }
+  .presentaciones tr {
+    display: block;
+    margin-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+  }
+  .presentaciones td {
+    display: block;
+    text-align: left;
+    padding-left: 50%;
+    position: relative;
+  }
+  .presentaciones td:before {
+    position: absolute;
+    left: 0;
+    width: 45%;
+    white-space: nowrap;
+    font-weight: bold;
+    content: attr(data-label);
+  }
+}
